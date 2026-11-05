@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="小雯月事">
+<meta name="theme-color" content="#F7F7F8">
+<title>小雯月事</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" id="favicon" href="data:image/png;base64,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">
+<style>
+:root{--bg:#EFEFF2;--card:#FFFFFF;--text:#171717;--muted:#52525B;--border:rgba(23,23,23,.12);--brand:#4F46E5;--brand-soft:#EEF0FE;--period:#FB7185;--danger:#E53935}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,"PingFang SC",system-ui,sans-serif;font-size:14px;line-height:1.5}
+.wrap{max-width:420px;margin:0 auto;padding:16px 16px 32px}
+h1{font-size:20px;font-weight:600;padding:4px 4px 12px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px}
+.card.brand{border-color:var(--brand);text-align:center}
+.days{font-size:22px;font-weight:700;color:var(--brand)}
+.sub{font-size:12px;color:var(--muted);margin-top:4px}
+.pill{display:inline-block;margin-top:10px;background:var(--brand-soft);color:var(--brand);border:1px solid var(--brand);border-radius:999px;padding:5px 14px;font-size:12px;font-weight:500;cursor:pointer}
+.calhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.calhead .m{font-size:15px;font-weight:500}
+.nav{width:34px;height:32px;border:1px solid var(--border);border-radius:8px;background:var(--card);font-size:16px;color:var(--muted);cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.wd{text-align:center;font-size:12px;font-weight:500;color:var(--muted);padding:4px 0}
+.day{aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-size:14px;border-radius:8px;border:1px solid transparent}
+.day.period{background:var(--period);color:#fff}
+.day.predicted{border:1px dashed #000;color:#000}
+.day.today{border-color:var(--brand);color:var(--brand);font-weight:600}
+.legend{font-size:12px;color:var(--muted);margin:2px 4px 12px}
+.btns{display:flex;gap:10px}
+.btn{flex:1;text-align:center;border-radius:10px;padding:11px 0;font-size:14px;font-weight:500;cursor:pointer;border:none}
+.btn.solid{background:var(--brand);color:#fff}
+.btn.line{border:1px solid var(--border);background:var(--card);color:var(--text)}
+.head{display:flex;align-items:center;margin-bottom:14px}
+.back{color:var(--brand);font-size:15px;font-weight:500;cursor:pointer;padding:4px 0}
+.htitle{flex:1;text-align:center;font-size:17px;font-weight:600}
+.big{text-align:center;font-size:22px;font-weight:700;margin:14px 0}
+input[type=date]{width:100%;padding:10px;border:1px solid var(--border);border-radius:10px;font-size:15px;background:var(--card);color:var(--text)}
+.hrow{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-top:1px solid var(--border);gap:8px}
+.hrow:first-child{border-top:none}
+.hrow .d{font-size:14px}
+.hrow .m{flex:1;font-size:12px;color:var(--muted)}
+.del{color:var(--danger);font-size:13px;font-weight:500;cursor:pointer;padding:4px 6px}
+.tips{font-size:14px;color:var(--muted);line-height:1.9}
+.love{color:var(--period);font-weight:500}
+.banner{position:fixed;left:12px;right:12px;top:12px;max-width:396px;margin:0 auto;background:var(--card);border:1px solid var(--brand);border-radius:14px;padding:14px 16px;box-shadow:0 8px 30px rgba(0,0,0,.18);z-index:99;display:none}
+.banner.show{display:block}
+.banner .t{font-weight:600;margin-bottom:4px}
+.banner .b{font-size:13px;color:var(--muted)}
+.banner .ok{margin-top:10px;background:var(--brand);color:#fff;border:none;border-radius:8px;padding:8px 0;width:100%;font-size:14px;cursor:pointer}
+.empty{text-align:center;color:var(--muted);padding:16px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 主界面 -->
+  <div id="view-main">
+    <h1>小雯月事</h1>
+    <div class="card brand">
+      <div class="days" id="tvDays"></div>
+      <div class="sub" id="tvPredict"></div>
+      <div class="sub" id="tvCycle"></div>
+      <span class="pill" id="btnRemind"></span>
+    </div>
+    <div class="card">
+      <div class="calhead">
+        <button class="nav" id="btnPrev">‹</button>
+        <span class="m" id="tvMonth"></span>
+        <button class="nav" id="btnNext">›</button>
+      </div>
+      <div class="grid" id="cal"></div>
+    </div>
+    <div class="legend">● 红色=经期　◌ 黑色虚线=预测经期</div>
+    <div class="btns">
+      <button class="btn solid" id="btnRecord">让小强记录一下</button>
+      <button class="btn line" id="btnHistory">历史记录</button>
+    </div>
+  </div>
+
+  <!-- 记录页 -->
+  <div id="view-record" style="display:none">
+    <div class="head"><span class="back" data-back>‹ 返回</span><span class="htitle">记录经期</span></div>
+    <div class="card">
+      <div class="sub" style="text-align:center">这次来姨妈的日期</div>
+      <div class="big" id="tvDate"></div>
+      <input type="date" id="pickDate">
+      <button class="btn solid" style="width:100%;margin-top:14px" id="btnSave">保存记录</button>
+      <div class="sub" style="text-align:center;margin-top:8px">保存后自动标记该日起 5 天为经期</div>
+    </div>
+    <div class="card">
+      <div style="font-size:16px;font-weight:600;margin-bottom:8px">小强提示：</div>
+      <div class="tips">· 宝宝，很痛的时候记得吃布洛芬<br>· 记得给雯雯准备热水<br>· 少吃生冷辛辣<br>· 经期容易累，多休息少熬夜<br>· 心情烦躁时给小强来电<br><span class="love">小强爱你哦！！！！！！！</span><br>· 保存记录后预测会自动更新</div>
+    </div>
+  </div>
+
+  <!-- 历史记录页 -->
+  <div id="view-history" style="display:none">
+    <div class="head"><span class="back" data-back>‹ 返回</span><span class="htitle">历史记录</span></div>
+    <div class="card" id="histCard"><div id="hist"></div></div>
+  </div>
+
+</div>
+
+<div class="banner" id="banner">
+  <div class="t">小雯月事提醒</div>
+  <div class="b" id="bannerText"></div>
+  <button class="ok" id="bannerOk">知道啦</button>
+</div>
+
+<script>
+var PERIOD_LEN = 5;
+var SEED = ["2025-04-30","2025-05-29","2025-06-26","2025-07-24","2025-08-22","2025-09-14","2025-10-17","2025-11-14","2025-12-13","2026-01-12","2026-02-08","2026-03-09","2026-04-07","2026-05-03","2026-06-09","2026-07-08","2026-08-04","2026-09-02","2026-10-10"];
+
+function pad(n){return (n<10?"0":"")+n}
+function keyOf(d){return d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate())}
+function parseDay(s){var p=s.split("-");return new Date(+p[0],+p[1]-1,+p[2])}
+function today0(){var t=new Date();return new Date(t.getFullYear(),t.getMonth(),t.getDate())}
+
+/* 数据 */
+function getMarks(){
+  var raw = localStorage.getItem("xw_marks");
+  if(raw) return JSON.parse(raw);
+  var m = {};
+  SEED.forEach(function(s){ var d0=parseDay(s); for(var i=0;i<PERIOD_LEN;i++){ var d=new Date(d0); d.setDate(d.getDate()+i); m[keyOf(d)]=1; } });
+  localStorage.setItem("xw_marks", JSON.stringify(m));
+  return m;
+}
+function saveMarks(m){ localStorage.setItem("xw_marks", JSON.stringify(m)); }
+function starts(){
+  var m = getMarks(), days = Object.keys(m).sort(), res = [];
+  days.forEach(function(s){
+    var d = parseDay(s); d.setDate(d.getDate()-1);
+    if(!m[keyOf(d)]) res.push(s);
+  });
+  return res;
+}
+function avgCycle(){
+  var st = starts();
+  if(st.length < 2) return 28;
+  var sum = 0;
+  for(var i=1;i<st.length;i++) sum += Math.round((parseDay(st[i])-parseDay(st[i-1]))/86400000);
+  return Math.round(sum/(st.length-1));
+}
+function predictedStart(){
+  var st = starts();
+  if(!st.length){ var t=today0(); t.setDate(t.getDate()+28); return t; }
+  var d = parseDay(st[st.length-1]); d.setDate(d.getDate()+avgCycle()); return d;
+}
+function markPeriod(s){
+  var m = getMarks(), d0 = parseDay(s);
+  for(var i=0;i<PERIOD_LEN;i++){ var d=new Date(d0); d.setDate(d.getDate()+i); m[keyOf(d)]=1; }
+  saveMarks(m);
+}
+function unmarkPeriod(s){
+  var m = getMarks(), d0 = parseDay(s);
+  for(var i=0;i<PERIOD_LEN;i++){ var d=new Date(d0); d.setDate(d.getDate()+i); delete m[keyOf(d)]; }
+  saveMarks(m);
+}
+
+/* 视图切换 */
+function show(id){
+  ["view-main","view-record","view-history"].forEach(function(v){
+    document.getElementById(v).style.display = (v===id)?"":"none";
+  });
+  window.scrollTo(0,0);
+}
+document.querySelectorAll("[data-back]").forEach(function(el){
+  el.addEventListener("click", function(){ render(); show("view-main"); });
+});
+
+/* 主界面 */
+var viewY, viewM;
+var now = today0(); viewY = now.getFullYear(); viewM = now.getMonth();
+
+function render(){
+  var t = today0(), avg = avgCycle(), next = predictedStart();
+  var left = Math.round((next-t)/86400000);
+  document.getElementById("tvDays").textContent = left>0 ? "还有 "+left+" 天" : (left===0 ? "预计就是今天" : "可能已推迟 "+(-left)+" 天");
+  document.getElementById("tvPredict").textContent = "周国雯小朋友，预计你的下次经期："+(next.getMonth()+1)+"月"+next.getDate()+"日";
+  document.getElementById("tvCycle").textContent = "平均周期 "+avg+" 天 · 经期按 "+PERIOD_LEN+" 天估算，做好准备哦";
+  var on = localStorage.getItem("xw_remind") !== "0";
+  document.getElementById("btnRemind").textContent = on ? "🔔 经前 2 天提醒我" : "🔕 提醒已关闭";
+  renderCalendar(t, next);
+}
+
+function renderCalendar(today, next){
+  document.getElementById("tvMonth").textContent = viewY+" 年 "+(viewM+1)+" 月";
+  var m = getMarks(), pred = {};
+  for(var i=0;i<PERIOD_LEN;i++){ var d=new Date(next); d.setDate(d.getDate()+i); pred[keyOf(d)]=1; }
+  var html = ["日","一","二","三","四","五","六"].map(function(w){return '<div class="wd">'+w+'</div>'}).join("");
+  var first = new Date(viewY, viewM, 1), n = new Date(viewY, viewM+1, 0).getDate();
+  for(var b=0;b<first.getDay();b++) html += '<div class="day"></div>';
+  for(var d=1; d<=n; d++){
+    var dt = new Date(viewY, viewM, d), k = keyOf(dt), cls = "day";
+    if(m[k]) cls += " period";
+    else if(pred[k]) cls += " predicted";
+    if(dt.getTime()===today.getTime()) cls += " today";
+    html += '<div class="'+cls+'">'+d+'</div>';
+  }
+  document.getElementById("cal").innerHTML = html;
+}
+
+document.getElementById("btnPrev").addEventListener("click", function(){
+  viewM--; if(viewM<0){viewM=11;viewY--;} render();
+});
+document.getElementById("btnNext").addEventListener("click", function(){
+  viewM++; if(viewM>11){viewM=0;viewY++;} render();
+});
+document.getElementById("btnRemind").addEventListener("click", function(){
+  var on = localStorage.getItem("xw_remind") !== "0";
+  localStorage.setItem("xw_remind", on ? "0" : "1");
+  render();
+});
+document.getElementById("btnRecord").addEventListener("click", function(){
+  show("view-record");
+});
+document.getElementById("btnHistory").addEventListener("click", function(){
+  renderHistory(); show("view-history");
+});
+
+/* 记录页 */
+var pick = document.getElementById("pickDate");
+pick.value = keyOf(today0());
+function updDateLabel(){
+  var d = parseDay(pick.value);
+  document.getElementById("tvDate").textContent = d.getFullYear()+" 年 "+(d.getMonth()+1)+" 月 "+d.getDate()+" 日";
+}
+pick.addEventListener("change", updDateLabel);
+updDateLabel();
+document.getElementById("btnSave").addEventListener("click", function(){
+  if(!pick.value) return;
+  markPeriod(pick.value);
+  var d = parseDay(pick.value);
+  alert("已记录 "+(d.getMonth()+1)+"月"+d.getDate()+"日 开始");
+  render(); show("view-main");
+});
+
+/* 历史记录页 */
+function renderHistory(){
+  var st = starts(), el = document.getElementById("hist");
+  if(!st.length){ el.innerHTML = '<div class="empty">还没有记录</div>'; return; }
+  var html = "";
+  for(var i=st.length-1;i>=0;i--){
+    var d = parseDay(st[i]);
+    var meta = "持续约 "+PERIOD_LEN+" 天 · " + (i>0 ? Math.round((parseDay(st[i])-parseDay(st[i-1]))/86400000)+" 天周期" : "首次记录");
+    html += '<div class="hrow"><span class="d">'+d.getFullYear()+'年'+(d.getMonth()+1)+'月'+d.getDate()+'日 开始</span><span class="m">'+meta+'</span><span class="del" data-s="'+st[i]+'">删除</span></div>';
+  }
+  el.innerHTML = html;
+  el.querySelectorAll(".del").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var s = btn.getAttribute("data-s"), d = parseDay(s);
+      if(confirm("确定删除 "+d.getFullYear()+"年"+(d.getMonth()+1)+"月"+d.getDate()+"日 的经期记录吗？")){
+        unmarkPeriod(s); renderHistory();
+      }
+    });
+  });
+}
+
+/* 提醒：每天首次打开时弹窗（代替系统推送），图标加红点 */
+function checkReminder(){
+  var on = localStorage.getItem("xw_remind") !== "0";
+  var t = today0(), next = predictedStart();
+  var left = Math.round((next-t)/86400000);
+  var todayKey = keyOf(t);
+  var due = on && left>=0 && left<=2;
+  var unread = localStorage.getItem("xw_read") !== todayKey;
+
+  if(due && unread){
+    var txt = left===0
+      ? "宝宝，预计今天来（"+(next.getMonth()+1)+"月"+next.getDate()+"日），注意保暖哦"
+      : "宝宝，预计 "+(next.getMonth()+1)+"月"+next.getDate()+"日 来姨妈，还有 "+left+" 天，做好准备哦";
+    document.getElementById("bannerText").textContent = txt;
+    document.getElementById("banner").classList.add("show");
+    setBadge(true);
+  } else {
+    setBadge(false);
+  }
+  /* 打开即视为已读 */
+  localStorage.setItem("xw_read", todayKey);
+  if(!due) setBadge(false);
+}
+document.getElementById("bannerOk").addEventListener("click", function(){
+  document.getElementById("banner").classList.remove("show");
+  setBadge(false);
+});
+
+/* 图标红点（浏览器标签页 favicon）*/
+var FAVICON_OK = document.getElementById("favicon").href;
+function setBadge(on){
+  if(!on){ document.getElementById("favicon").href = FAVICON_OK; return; }
+  var img = new Image();
+  img.onload = function(){
+    var c = document.createElement("canvas"); c.width=c.height=180;
+    var x = c.getContext("2d");
+    x.drawImage(img,0,0,180,180);
+    x.fillStyle="#E53935"; x.beginPath(); x.arc(140,38,30,0,7); x.fill();
+    document.getElementById("favicon").href = c.toDataURL("image/png");
+  };
+  img.src = FAVICON_OK;
+}
+
+render();
+checkReminder();
+</script>
+</body>
+</html>
