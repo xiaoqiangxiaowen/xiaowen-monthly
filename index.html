@@ -183,7 +183,7 @@ function render(){
   var t = today0(), avg = avgCycle(), next = predictedStart();
   var left = Math.round((next-t)/86400000);
   document.getElementById("tvDays").textContent = left>0 ? "还有 "+left+" 天" : (left===0 ? "预计就是今天" : "可能已推迟 "+(-left)+" 天");
-  document.getElementById("tvPredict").textContent = "周国雯小朋友，预计你的下次经期："+(next.getMonth()+1)+"月"+next.getDate()+"日";
+  document.getElementById("tvPredict").textContent = "小雯，预计你的下次经期："+(next.getMonth()+1)+"月"+next.getDate()+"日";
   document.getElementById("tvCycle").textContent = "平均周期 "+avg+" 天 · 经期按 "+PERIOD_LEN+" 天估算，做好准备哦";
   var on = localStorage.getItem("xw_remind") !== "0";
   document.getElementById("btnRemind").textContent = on ? "🔔 经前 2 天提醒我" : "🔕 提醒已关闭";
